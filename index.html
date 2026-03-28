@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Austin Real Estate Partners | Bob McKenna, Broker</title>
-  <meta name="description" content="Austin Real Estate Partners — Residential real estate brokerage serving Austin and surrounding areas. Broker Bob McKenna brings 20+ years of experience helping buyers, sellers, investors, and tenants.">
+  <title>Austin Real Estate Partners | Bob &amp; Melinda McKenna, Brokers</title>
+  <meta name="description" content="Austin Real Estate Partners — Residential real estate brokerage serving Austin and surrounding areas. Bob and Melinda McKenna bring 20+ years of experience helping buyers, sellers, investors, and tenants.">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -32,7 +32,7 @@
       <div class="hero-inner">
         <p class="hero-label">Residential Real Estate &middot; Austin, TX</p>
         <h1>Trusted guidance for every step of your real estate journey.</h1>
-        <p>Bob McKenna and Austin Real Estate Partners have helped clients buy, sell, invest, and lease residential properties across Austin and the surrounding communities since 2003.</p>
+        <p>Bob and Melinda McKenna and Austin Real Estate Partners have helped clients buy, sell, invest, and lease residential properties across Austin and the surrounding communities since 2003.</p>
         <div class="hero-contact">
           <a href="tel:5127851949">&#9742; (512) 785-1949</a>
           <a id="hero-email" href="#">&#9993; <span id="hero-email-text"></span></a>
@@ -138,8 +138,8 @@
       <p class="section-subtitle">Reach out by phone or email, or send a message using the form below.</p>
       <div class="contact-grid">
         <div class="contact-info">
-          <h3>Bob McKenna, MBA</h3>
-          <p class="contact-detail">Broker/Owner &middot; License #486811</p>
+          <h3>Bob &amp; Melinda McKenna</h3>
+          <p class="contact-detail">Brokers/Owners</p>
           <p class="contact-detail">
             <strong>Phone:</strong> <a href="tel:5127851949">(512) 785-1949</a>
           </p>
@@ -147,7 +147,10 @@
             <strong>Office:</strong> <a href="tel:5122888088">(512) 288-8088</a>
           </p>
           <p class="contact-detail">
-            <strong>Email:</strong> <a id="contact-email" href="#"></a>
+            <strong>Email:</strong> <a id="contact-email-bob" href="#"></a>
+          </p>
+          <p class="contact-detail">
+            <span style="visibility:hidden"><strong>Email:</strong></span> <a id="contact-email-melinda" href="#"></a>
           </p>
           <p class="contact-detail" style="margin-top: 20px;">
             Austin Real Estate Partners<br>
@@ -195,14 +198,17 @@
 
   <script>
     (function(){
-      var u='Bob',d='AustinReps',t='com',e=u+'@'+d+'.'+t;
-      var ml='mai'+'lto:'+e;
+      var d='AustinReps',t='com';
+      var b='Bob'+'@'+d+'.'+t;
+      var m='Melinda'+'@'+d+'.'+t;
       var h=document.getElementById('hero-email');
-      if(h){h.href=ml;document.getElementById('hero-email-text').textContent=e;}
-      var c=document.getElementById('contact-email');
-      if(c){c.href=ml;c.textContent=e;}
+      if(h){h.href='mai'+'lto:'+b;document.getElementById('hero-email-text').textContent=b;}
+      var cb=document.getElementById('contact-email-bob');
+      if(cb){cb.href='mai'+'lto:'+b;cb.textContent=b;}
+      var cm=document.getElementById('contact-email-melinda');
+      if(cm){cm.href='mai'+'lto:'+m;cm.textContent=m;}
       var f=document.getElementById('contact-form');
-      if(f){f.action='https://formsubmit.co/'+e;}
+      if(f){f.action='https://formsubmit.co/'+b;}
     })();
   </script>
 </body>
