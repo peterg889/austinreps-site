@@ -35,7 +35,7 @@
         <p>Bob McKenna and Austin Real Estate Partners have helped clients buy, sell, invest, and lease residential properties across Austin and the surrounding communities since 2003.</p>
         <div class="hero-contact">
           <a href="tel:5127851949">&#9742; (512) 785-1949</a>
-          <a href="mailto:Bob@AustinReps.com">&#9993; Bob@AustinReps.com</a>
+          <a id="hero-email" href="#">&#9993; <span id="hero-email-text"></span></a>
         </div>
       </div>
     </div>
@@ -147,7 +147,7 @@
             <strong>Office:</strong> <a href="tel:5122888088">(512) 288-8088</a>
           </p>
           <p class="contact-detail">
-            <strong>Email:</strong> <a href="mailto:Bob@AustinReps.com">Bob@AustinReps.com</a>
+            <strong>Email:</strong> <a id="contact-email" href="#"></a>
           </p>
           <p class="contact-detail" style="margin-top: 20px;">
             Austin Real Estate Partners<br>
@@ -161,7 +161,7 @@
           </div>
         </div>
         <div>
-          <form class="contact-form" action="https://formsubmit.co/Bob@AustinReps.com" method="POST">
+          <form id="contact-form" class="contact-form" action="#" method="POST">
             <input type="hidden" name="_subject" value="New inquiry from AustinReps.com">
             <input type="hidden" name="_captcha" value="false">
             <label for="name">Name</label>
@@ -193,5 +193,17 @@
     </div>
   </footer>
 
+  <script>
+    (function(){
+      var u='Bob',d='AustinReps',t='com',e=u+'@'+d+'.'+t;
+      var ml='mai'+'lto:'+e;
+      var h=document.getElementById('hero-email');
+      if(h){h.href=ml;document.getElementById('hero-email-text').textContent=e;}
+      var c=document.getElementById('contact-email');
+      if(c){c.href=ml;c.textContent=e;}
+      var f=document.getElementById('contact-form');
+      if(f){f.action='https://formsubmit.co/'+e;}
+    })();
+  </script>
 </body>
 </html>
